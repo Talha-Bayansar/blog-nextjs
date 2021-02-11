@@ -1,0 +1,45 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    width: 100%;
+    padding: 0 10px;
+    background-color: rgb(43, 43, 43);
+
+    & > .title {
+        font-size: 1.5rem;
+        color: rgb(226, 226, 226);
+        font-weight: 600;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+
+        &:hover {
+            font-size: 1.75rem;
+            text-shadow: 7px 7px 3px grey;
+        }
+    }
+
+    & > .navItems {
+        display: flex;
+
+        & > a {
+            color: rgb(80, 80, 224);
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+
+            &:hover {
+                color: rgb(118, 118, 218);
+            }
+        }
+    }
+}
+
+.content {
+    display: block;
+    margin-top: 7vh;
+}
